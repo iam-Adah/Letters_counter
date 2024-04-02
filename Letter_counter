@@ -1,0 +1,16 @@
+# Defines a given string.
+info = "You can have data without information, but you can not have information without data."
+info = info.lower() # Convert the string to lower case
+print(info)
+# Defines a list of all the English alphabet.
+alphaList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# for llop iterates and creates a variable to store the frequency for each alphabet set initially at zero.
+for letter in alphaList:
+    frequency = 0
+    # This loops through the given string 'info' and counts the number of times each alphabet occurs.
+    for char in info:
+        if char == letter:
+            frequency += 1 # Increases the count anytime it loops over same letter.
+    # This prints out every letter that occurs in the given string 'info'.        
+    if frequency != 0:
+        print(letter + ":", frequency)
